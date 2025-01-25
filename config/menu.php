@@ -56,7 +56,7 @@ return [
         ],
     ],
  
-
+/* 
     'Categories Logements' => [
         'icon' => 'list',
         'role'   => 'admin',
@@ -77,9 +77,9 @@ return [
                 'route' => 'logements.edit',
             ],
         ],
-    ],
+    ], */
 
-    'Appartemens' => [
+   /*  'Appartemens' => [
         'icon' => 'list',
         'role'   => 'redac',
         'children' => [
@@ -99,10 +99,10 @@ return [
                 'route' => 'books.edit',
             ],
         ],
-    ],
+    ], */
 
 
-    
+   /*  
     'Rooms' => [
         'icon' => 'list',
         'role'   => 'redac',
@@ -125,7 +125,7 @@ return [
                 'route' => 'rooms.edit',
             ],
         ],
-    ],
+    ], */
 
    /*  'Filières' => [
         'icon' => 'list',
@@ -238,7 +238,7 @@ return [
         ],
     ],
  */
-   /*  'Products' => [
+     'Products' => [
         'icon' => 'list',
         'role'   => 'admin',
         'children' => [
@@ -258,7 +258,7 @@ return [
                 'route' => 'saveproducts.edit',
             ],
         ],
-    ], */
+    ], 
     'Utilisateurs' => [
         'icon' => 'user',
         'role'   => 'admin',
@@ -412,7 +412,7 @@ return [
     ],
  */
     
-    'Réservation' => [
+    /* 'Réservation' => [
         'icon' => 'comment',
         'role'   => 'redac',
         'children' => [
@@ -429,7 +429,7 @@ return [
             ],
         
         ],
-    ],
+    ], */
     'Contacts' => [
         'icon' => 'envelope',
         'role'   => 'admin',

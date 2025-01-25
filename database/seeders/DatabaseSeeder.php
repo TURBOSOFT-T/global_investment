@@ -39,12 +39,11 @@ class DatabaseSeeder extends Seeder
 
         $cat = new Config();
         $cat->frais = '15';
-        $cat->description = 'GREENLYFES est une entreprise spécialisée en intermediation  des 
-entreprises. Nous intervenons dans cinq secteurs: les études, les produits 
-artisanaux, la santé, informatique, et le tourisme';
-       $cat->telephone= '56399165';
-       $cat->email='greenlyfes@gmail.com';
-       $cat->addresse='Tunis ';
+        $cat->description = 'GLOBAL INVESTMENT est une entreprise spécialisée en intermediation  des 
+entreprises.';
+       $cat->telephone= '563991666';
+       $cat->email='globalinvestment@gmail.com';
+       $cat->addresse='Lasvegas';
 
         $cat->save(); 
 

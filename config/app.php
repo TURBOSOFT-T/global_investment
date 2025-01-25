@@ -269,10 +269,9 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'description' => 'GREENLYFES est une entreprise spécialisée en intermediation  des 
-entreprises. Nous intervenons dans cinq secteurs: les études, les produits 
-artisanaux, la santé, informatique, et le tourisme',
-    'author' => 'GREENLYFEES ',
+    'description' => 'GLOBAL INVESTMENT est une entreprise spécialisée en intermediation  des 
+entreprises.',
+    'author' => 'GLOBAL INVESTMENT',
 
     /*
     |--------------------------------------------------------------------------

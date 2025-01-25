@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> @yield('titre') - GREENLYFE </title>
+    <title> @yield('titre') - GLOBAL-INVESTMENT </title>
  
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -609,8 +609,8 @@
                         <div class="col-12">
                             <div class="tp-copyright-text text-center">
                                 <p class="text-white" style="font-size: 12px;">
-                                    Copyright @ {{ date('Y') }} GREENLYFES. Build by
-                                    <a href="#" style="color: #11ee75;"><b>TURBOSOFT</b></a>.
+                                    Copyright @ {{ date('Y') }} GLOBAL-INVESTMENT.
+                                    <a href="#" style="color: #11ee75;"><b></b></a>.
                                 </p>
                             </div>
                         </div>
