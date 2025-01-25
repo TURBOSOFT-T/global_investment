@@ -57,28 +57,6 @@
 </div>
 
 
-        {{--     <div class="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix "
-                data-background="{{ url('public/Image/parametres/' . $config->imageblog) }}">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xxl-12">
-                            <div class="breadcrumb__content z-index text-center">
-                                <div class="breadcrumb__section-title-box">
-                                    <h3 class="breadcrumb__title">Nos blogs</h3>
-                                </div>
-                                <div class="breadcrumb__list">
-                                    <span><a href="#">Accueil</a></span>
-                                    <span class="dvdr"><i>/</i></span>
-
-                                    <span><b>Blogs</b></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-            <!-- breadcrumb area end -->
-
             <!-- blog area start -->
             <div class="tp-blog-area tp-blog-style-2 tp-blog-style-4 pb-0 mb-150 p-relative fix z-index">
                 <div class="container">
@@ -86,7 +64,7 @@
                         <div class="col-xl-12">
                             <div class="tp-blog-title-box text-center mb-60">
                                 <span class="tp-section-subtitle">Les rescentes publicatiions </span>
-                                {{-- <h4 class="tp-section-title">Latest Blog & News</h4> --}}
+                               
                             </div>
                         </div>
                     </div>
@@ -136,14 +114,14 @@
                                                     <span>{{ $post->title }}</span>
                                                 </a>
                                             </h4>
-                                            <a class="tp-btn-border-sm" href="{{ url('details-blog', ['id' => $post->id, 'slug' => Str::slug(Str::limit($post->title, 10))]) }}">
+                                            <a class=" btn-bg-primary2 " href="{{ url('details-blog', ['id' => $post->id, 'slug' => Str::slug(Str::limit($post->title, 10))]) }}">
                                                 <span>Voir détails</span>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             @endforeach
-                            <!-- Afficher les liens de pagination -->
+                            
                             <div class="pagination-wrapper d-flex justify-content-center">
                                  {{ $posts->links('pagination::bootstrap-4') }} 
                             </div>
@@ -154,9 +132,7 @@
                    
                 </div>
             </div>
-            <!-- blog area end -->
-
-            <!-- brand area start -->
+          
             <div class="tp-brand-area tp-brand-bg" data-background="assets/img/shape/funfact/bg-3-1.jpg">
                 <div class="container">
                     <div class="row">
@@ -181,9 +157,7 @@
                     </div>
                 </div>
             </div>
-            <!-- brand area end -->
-
-            <!-- contact area start -->
+          
             <div class="tp-contact-2-area theme-bg-2 pt-75 pb-55 z-index">
                 <div class="container">
                     <div class="tp-contact-2-bg white-bg tp-contact-2-style-2">
@@ -262,7 +236,7 @@
                     </div>
                 </div>
             </div>
-            <!-- contact area end -->
+         
 
 
         </main>

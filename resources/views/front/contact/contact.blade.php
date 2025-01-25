@@ -24,10 +24,10 @@
                 </div>
                 <div class="tp-contact-top-wrap mb-120">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class=" col-xl-4 col-lg-6 col-md-6">
                             <div class="tp-contact-2-box p-relative mb-25">
-                                <div class="tp-contact-2-icon my-auto">
-                                    <span>
+                                <div class=" tp-contact-2-icon my-auto">
+                                    <span >
                                         <svg width="13" height="18" viewBox="0 0 13 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -162,7 +162,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <button class="tp-btn-theme" type="submit">
+                                <button class="btn-bg-primary2 " type="submit">
                                     <span>Envoyer</span>
                                 </button>
                                 <p class="ajax-response"></p>

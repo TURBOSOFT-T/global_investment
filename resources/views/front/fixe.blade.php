@@ -58,7 +58,22 @@
 
 </head>
 
+
+
 <body>
+
+    <style>
+        .btn-bg-primary2 {
+            background-color: #141bec;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+    </style>
+
 
 
     <!-- Preloader -->
@@ -350,7 +365,7 @@
                                     style=" height: 60px;  line-height: 60px;   padding: 0 ;  display: inline-block;font-weight: 700;font-size: 18px; ">
                                     {{-- <a class="tp-btn-theme" href="contact.html"><span>Get Started Now</span></a> --}}
                                     <div class="dropdown">
-                                        <button class="btn btn-success dropdown-toggle p-3 " type="button"
+                                        <button class="btn btn-bg-primary2  dropdown-toggle p-3 " type="button"
                                             id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                             {{ Auth::user()->name }} 
                                         </button>

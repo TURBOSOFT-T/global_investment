@@ -923,7 +923,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <button class="tp-btn-theme" type="submit">
+                                <button class="btn-bg-primary2 " type="submit">
                                     <span>
                                         {{ \App\Helpers\TranslationHelper::TranslateText('Envoyer') }}
                                     </span>
@@ -987,7 +987,7 @@
                 </div>
 
                 <div class="text-center mt-30">
-                    <button type="button" class="tp-btn-theme"{{-- class="btn btn-primary" --}} data-bs-toggle="modal"
+                    <button type="button" class=" btn-bg-primary2"{{-- class="btn btn-primary" --}} data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
 
                         {{ \App\Helpers\TranslationHelper::TranslateText('Laissez un témoignage') }}
@@ -1031,7 +1031,7 @@
                                     placeholder="Votre message" required></textarea>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="tp-btn-theme">
+                                <button type="submit" class="btn-bg-primary2 ">
                                     {{ \App\Helpers\TranslationHelper::TranslateText('Envoyer') }}
                                 </button>
                             </div>
@@ -1313,7 +1313,7 @@
                                 <div class="tp-slider-dots z-index text-center mt-50"></div>
                             </div>
                             <div class="text-center mt-30">
-                                <a class="tp-btn-theme" href="{{ url('blog') }}" class="tp-btn">
+                                <a class="btn-bg-primary2 " href="{{ url('blog') }}" class="tp-btn">
                                     {{ \App\Helpers\TranslationHelper::TranslateText('Voir toutes les nouvelles') }}
                                 </a>
                             </div>
@@ -1358,7 +1358,17 @@
             </div>
         </div>
         <!-- brand area end -->
+        <style>
+            .btn-bg-primary2 {
+                background-color: #141bec;
+                color: #ffffff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
 
+        </style>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
