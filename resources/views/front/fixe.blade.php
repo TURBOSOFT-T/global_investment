@@ -79,13 +79,13 @@
     <!-- Preloader -->
 
 
-    {{--     <div class="preloader-wrapper" style="background-color: #171041;">
+         <div class="preloader-wrapper" style="background-color: #171041;">
         <div class="preloader-container">
             <div class="preloader bounce-active">
                 <img src="{{ url('public/Image/parametres/' . $config->logo) }}" alt="preloader">
             </div>
         </div>
-    </div> --}}
+    </div>
 
 
 
@@ -372,24 +372,7 @@
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2"
                                             style="padding:0%; font-size:100%;padding:0%">
 
-                                          {{--   <a href="{{ route('rents') }}" class="cursor-pointer mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-110 duration-300 ease-in-out">
-                                                Mon tableau de bord
-                                              </a> --}}
-                                            {{--  <a class="dropdown-item" href="{{ route('rents') }}">
-                                                <i class="bx bx-tachometer text-left"></i>
-                                                <span>Mes réservations</span>
-                                            </a> --}}
-
-                                            {{-- <a class="dropdown-item" href="{{ route('favories') }}">
-                                                <i class="bx bx-tachometer"></i>
-                                                <span>Mes favoris</span>
-
-                                            </a> --}}
-                                            {{--  <a class="dropdown-item" href="{{ route('profile') }}">
-                                                <i class="bx bx-tachometer"></i>
-                                                <span>Paramètres</span>
-
-                                            </a> --}}
+                                    
 
                                             <a class="dropdown-item" href="{{ route('logout') }}"
                                                 onclick="event.preventDefault();

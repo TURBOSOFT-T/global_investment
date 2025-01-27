@@ -24,17 +24,17 @@
                                 <div class="container">
                                     <style>
                                         .custom-text-white {
-    color: white !important;
-}
-
+                                            color: white !important;
+                                        }
                                     </style>
                                     <div class="row justify-content-center">
                                         <div class="col-lg-10 text-center">
-                                            <p class="fs-5 fw-medium custom-text-white text-primary text-uppercase animated slideInRight">
+                                            <p
+                                                class="fs-5 fw-medium custom-text-white text-primary text-uppercase animated slideInRight">
                                                 {{ $home->title }}
                                             </p>
                                             <h1 class="display-10 mb-10 text-white animated slideInRight">
-                                                {!!  $home->body !!}
+                                                {!! $home->body !!}
                                             </h1>
                                             <a href="#" class="btn btn-primary py-3 px-5 animated slideInRight">
                                                 {{ \App\Helpers\TranslationHelper::TranslateText('Voir plus') }}
@@ -58,29 +58,31 @@
         </div>
 
 
-<style>
-    .responsive-image {
-    width: 100%;      /* L'image occupe toute la largeur */
-    height: 300px;    /* Hauteur fixe */
-    object-fit: cover; /* Ajuste le contenu sans déformer */
-}
+        <style>
+            .responsive-image {
+                width: 100%;
+                /* L'image occupe toute la largeur */
+                height: 300px;
+                /* Hauteur fixe */
+                object-fit: cover;
+                /* Ajuste le contenu sans déformer */
+            }
 
 
-@media (max-width: 768px) {
-    .responsive-image {
-        max-width: 100%; /* Pleine largeur sur mobile */
-        height: auto;
-    }
-}
-
-
-</style>
+            @media (max-width: 768px) {
+                .responsive-image {
+                    max-width: 100%;
+                    /* Pleine largeur sur mobile */
+                    height: auto;
+                }
+            }
+        </style>
 
         <!-- choose area start -->
         <div class="tp-choose-3-area tp-choose-style-2 fix p-relative pt-150 pb-110">
-            <div class="tp-choose-3-shape  d-sm-block" >
-                <img class="img-fluid" src="{{ url('public/Image/parametres/' . $config->imageabout) }}" height="300" width="400"
-                    alt="">
+            <div class="tp-choose-3-shape  d-sm-block">
+                <img class="img-fluid" src="{{ url('public/Image/parametres/' . $config->imageabout) }}" height="300"
+                    width="400" alt="">
             </div>
             <div class="container">
                 <div class="row align-items-center">
@@ -117,7 +119,8 @@
                                 </div>
                                 <div class="tp-choose-content" style="text-align: justify">
                                     <h5 class="tp-choose-title">
-                                        {{ \App\Helpers\TranslationHelper::TranslateText('Club House et Espaces Communautaires') }}</h5>
+                                        {{ \App\Helpers\TranslationHelper::TranslateText('Club House et Espaces Communautaires') }}
+                                    </h5>
                                     <p>
 
 
@@ -148,9 +151,9 @@
                     </div>
                     <div class="col-xl-7 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".7s">
                         <div class="tp-choose-3-thumb-box p-relative">
-                            <div class="tp-choose-3-award"  style="width: 100%; max-width: 800px; margin: auto;">
-                                <img class="img-fluid" src="{{ url('public/Image/parametres/' . $config->imageabout) }}" alt=""
-                                    width="1200" height="600">
+                            <div class="tp-choose-3-award" style="width: 100%; max-width: 800px; margin: auto;">
+                                <img class="img-fluid" src="{{ url('public/Image/parametres/' . $config->imageabout) }}"
+                                    alt="" width="1200" height="600">
                             </div>
 
                         </div>
@@ -185,26 +188,26 @@
                             <div class="swiper-container tp-service-4-active">
                                 <div class="swiper-wrapper">
                                     @if ($logements->isEmpty())
-                                    <div class="alert alert-info">
-                                        <p>Aucun logement n'est disponible pour le moment.</p>
-                                    </div>
-                                @else
-                                    @foreach ($logements as $logement)
-                                        <div class="swiper-slide">
-                                            <div class="tp-service-4-item text-center">
-                                                <div class="tp-service-4-thumb  image-container">
-                                                    <img src="{{ url('public/Image/' . $logement->image) }}"
-                                                        alt="">
-                                                </div>
-                                                <div class="tp-service-4-content">
+                                        <div class="alert alert-info">
+                                            <p>Aucun logement n'est disponible pour le moment.</p>
+                                        </div>
+                                    @else
+                                        @foreach ($logements as $logement)
+                                            <div class="swiper-slide">
+                                                <div class="tp-service-4-item text-center">
+                                                    <div class="tp-service-4-thumb  image-container">
+                                                        <img src="{{ url('public/Image/' . $logement->image) }}"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="tp-service-4-content">
 
-                                                    <h4 class="tp-service-4-title"><a class="text-anim-3"
-                                                            href="{{ route('details-logement', ['id' => $logement->id, 'slug' => Str::slug(Str::limit($logement->name, 10))]) }}">{{ $logement->name ?? '' }}</a>
-                                                    </h4>
+                                                        <h4 class="tp-service-4-title"><a class="text-anim-3"
+                                                                href="{{ route('details-logement', ['id' => $logement->id, 'slug' => Str::slug(Str::limit($logement->name, 10))]) }}">{{ $logement->name ?? '' }}</a>
+                                                        </h4>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    @endforeach
+                                        @endforeach
                                     @endif
 
 
@@ -676,49 +679,50 @@
                             <div class="swiper-container tp-project-2-active">
                                 <div class="swiper-wrapper">
                                     @if ($galleries->isEmpty())
-                                    <div class="alert alert-info">
-                                        <p>Aucune gallerie n'est disponible pour le moment.</p>
-                                    </div>
-                                @else
-                                    @foreach ($galleries as $gallery)
-                                        <div class="swiper-slide">
-                                            <div class="tp-project-2-item p-relative">
+                                        <div class="alert alert-info">
+                                            <p>Aucune gallerie n'est disponible pour le moment.</p>
+                                        </div>
+                                    @else
+                                        @foreach ($galleries as $gallery)
+                                            <div class="swiper-slide">
+                                                <div class="tp-project-2-item p-relative">
 
 
 
 
 
-                                                <div class="tp-project-2-thumb">
-                                                    <img src="{{ url('public/Image/' . $gallery->image) }}"
-                                                        alt="" width="300" height="300">
-                                                </div>
-                                                <div class="tp-project-2-content z-index">
-                                                    {{--   <span>Garde</span> --}}
-                                                    <h4 class="tp-project-2-title"><a class="text-anim"
-                                                            href="#">{{ $gallery->titre ?? '' }}</a></h4>
-                                                </div>
-                                                <div class="tp-project-2-button">
-                                                    <a class="tp-btn-project" data-bs-toggle="modal"
-                                                        data-bs-target="#galleryModal" data-title="{{ $gallery->titre }}"
-                                                        data-description="{{ $gallery->description }}"
-                                                        data-image="{{ url('public/Image/' . $gallery->image) }}"
-                                                        href="#"><span>Voir plus</span>
-                                                        <i>
-                                                            <svg width="15" height="10" viewBox="0 0 15 10"
-                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M14.1543 4.99974L9.5111 9.644L8.7559 8.88987L12.1127 5.53307H0.0668316V4.4664H12.1127L8.7559 1.11067L9.5111 0.355469L14.1543 4.99974Z"
-                                                                    fill="currentcolor" />
-                                                            </svg>
-                                                        </i>
-                                                    </a>
+                                                    <div class="tp-project-2-thumb">
+                                                        <img src="{{ url('public/Image/' . $gallery->image) }}"
+                                                            alt="" width="300" height="300">
+                                                    </div>
+                                                    <div class="tp-project-2-content z-index">
+                                                        {{--   <span>Garde</span> --}}
+                                                        <h4 class="tp-project-2-title"><a class="text-anim"
+                                                                href="#">{{ $gallery->titre ?? '' }}</a></h4>
+                                                    </div>
+                                                    <div class="tp-project-2-button">
+                                                        <a class="tp-btn-project" data-bs-toggle="modal"
+                                                            data-bs-target="#galleryModal"
+                                                            data-title="{{ $gallery->titre }}"
+                                                            data-description="{{ $gallery->description }}"
+                                                            data-image="{{ url('public/Image/' . $gallery->image) }}"
+                                                            href="#"><span>Voir plus</span>
+                                                            <i>
+                                                                <svg width="15" height="10" viewBox="0 0 15 10"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M14.1543 4.99974L9.5111 9.644L8.7559 8.88987L12.1127 5.53307H0.0668316V4.4664H12.1127L8.7559 1.11067L9.5111 0.355469L14.1543 4.99974Z"
+                                                                        fill="currentcolor" />
+                                                                </svg>
+                                                            </i>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    @endforeach
+                                        @endforeach
 
                                     @endif
-                                
+
 
 
                                 </div>
@@ -954,13 +958,14 @@
                         <div class="tp-testimonial-wrapper">
                             <div class="swiper-container tp-testimonial-3-active">
                                 <div class="swiper-wrapper">
-                       
+
 
                                     @if ($testimonials->isEmpty())
-                                    <div class="alert alert-info">
-                                        <p> {{ \App\Helpers\TranslationHelper::TranslateText('Aucun témoignage disponible.') }}</p>
-                                    </div>
-                                @else
+                                        <div class="alert alert-info">
+                                            <p> {{ \App\Helpers\TranslationHelper::TranslateText('Aucun témoignage disponible.') }}
+                                            </p>
+                                        </div>
+                                    @else
                                         @foreach ($testimonials as $testimonial)
                                             <div class="swiper-slide">
                                                 <div class="tp-testimonial-item text-center">
@@ -1267,57 +1272,57 @@
                 <div class="row">
                     <div class="col-xl-12">
                         @if ($posts->isEmpty())
-                        <div class="alert alert-info">
-                            <p>Aucune actualité n'est disponible pour le moment.</p>
-                        </div>
-                    @else
-                        <div class="tp-blog-wrapper">
-                            <div class="swiper-container tp-blog-active">
-                                <div class="swiper-wrapper">
-                                  
-                                    @foreach ($posts as $post)
-                                        <div class="swiper-slide">
-                                            <div class="tp-blog-item">
-                                                <div class="tp-blog-thumb">
-                                                    <a
-                                                        href="{{ url('details-blog', ['id' => $post->id, 'slug' => Str::slug(Str::limit($post->title, 10))]) }}">
+                            <div class="alert alert-info">
+                                <p>Aucune actualité n'est disponible pour le moment.</p>
+                            </div>
+                        @else
+                            <div class="tp-blog-wrapper">
+                                <div class="swiper-container tp-blog-active">
+                                    <div class="swiper-wrapper">
+
+                                        @foreach ($posts as $post)
+                                            <div class="swiper-slide">
+                                                <div class="tp-blog-item">
+                                                    <div class="tp-blog-thumb">
+                                                        <a
+                                                            href="{{ url('details-blog', ['id' => $post->id, 'slug' => Str::slug(Str::limit($post->title, 10))]) }}">
 
 
 
-                                                        <img class="w-100" width="200" height="300"
-                                                            src="{{ url('public/Image/posts/' . $post->image) }}">
-                                                    </a>
-                                                </div>
-                                                <div class="tp-blog-content p-relative">
+                                                            <img class="w-100" width="200" height="300"
+                                                                src="{{ url('public/Image/posts/' . $post->image) }}">
+                                                        </a>
+                                                    </div>
+                                                    <div class="tp-blog-content p-relative">
 
 
-                                                    <h4 class="tp-blog-title mb-5">
-                                                        <a class="text-anim-3"
-                                                            href="{{ url('details-blog', ['id' => $post->id, 'slug' => Str::slug(Str::limit($post->title, 10))]) }}">{{ $post->title }}</a>
-                                                    </h4>
-                                                    <p class="mb-0 pb-20">{{ $post->meta_description }}</p>
-                                                    <a class="tp-blog-link"
-                                                        href="{{ url('details-blog', ['id' => $post->id, 'slug' => Str::slug(Str::limit($post->title, 10))]) }}">
-                                                        <i class="fa-light fa-arrow-right-long"></i>
-                                                        Voir détails
-                                                        <i class="fa-light fa-arrow-right-long"></i>
-                                                    </a>
+                                                        <h4 class="tp-blog-title mb-5">
+                                                            <a class="text-anim-3"
+                                                                href="{{ url('details-blog', ['id' => $post->id, 'slug' => Str::slug(Str::limit($post->title, 10))]) }}">{{ $post->title }}</a>
+                                                        </h4>
+                                                        <p class="mb-0 pb-20">{{ $post->meta_description }}</p>
+                                                        <a class="tp-blog-link"
+                                                            href="{{ url('details-blog', ['id' => $post->id, 'slug' => Str::slug(Str::limit($post->title, 10))]) }}">
+                                                            <i class="fa-light fa-arrow-right-long"></i>
+                                                            Voir détails
+                                                            <i class="fa-light fa-arrow-right-long"></i>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    @endforeach
+                                        @endforeach
 
 
 
+                                    </div>
+                                    <div class="tp-slider-dots z-index text-center mt-50"></div>
                                 </div>
-                                <div class="tp-slider-dots z-index text-center mt-50"></div>
+                                <div class="text-center mt-30">
+                                    <a class="btn-bg-primary2 " href="{{ url('blog') }}" class="tp-btn">
+                                        {{ \App\Helpers\TranslationHelper::TranslateText('Voir toutes les nouvelles') }}
+                                    </a>
+                                </div>
                             </div>
-                            <div class="text-center mt-30">
-                                <a class="btn-bg-primary2 " href="{{ url('blog') }}" class="tp-btn">
-                                    {{ \App\Helpers\TranslationHelper::TranslateText('Voir toutes les nouvelles') }}
-                                </a>
-                            </div>
-                        </div>
                         @endif
                     </div>
                 </div>
@@ -1367,7 +1372,6 @@
                 border-radius: 5px;
                 text-decoration: none;
             }
-
         </style>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

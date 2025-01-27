@@ -167,7 +167,7 @@
                                         </div>
 
                                     </div>
-                                    <button class="tp-btn-theme w-100" type="submit"><span>Enregistrer</span></button>
+                                    <button class="btn-bg-primary2  w-100" type="submit"><span>Enregistrer</span></button>
 
                                 </form>
                             </div>
